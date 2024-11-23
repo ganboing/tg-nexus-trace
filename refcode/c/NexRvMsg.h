@@ -31,7 +31,7 @@
 //                          name   def (marker | value)
 //#define NEXM_BEG(n, t)      {#n,    0x100 | (t)                 }
 #define NEXM_BEG(n, t)      {#n,    0x100 | (NEXUS_TCODE_##n)   },
-#define NEXM_SRC(opt)
+#define NEXM_SRC(n)         {#n,    0x200 | 2                   },
 //#define   NEXM_FLD(n, s)    {#n,    0x200 | (s)                 }
 #define   NEXM_FLD(n, s)    {#n,    0x200 | (NEXUS_FLDSIZE_##n) },
 #define   NEXM_VAR(n)       {#n,    0x400                       },
